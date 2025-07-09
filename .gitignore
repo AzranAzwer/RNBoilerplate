@@ -1,0 +1,82 @@
+ ========== Global Ignore Rules ==========
+
+node_modules/
+npm-debug.log
+.DS_Store
+dist/
+*.tgz
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Yarn Berry
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Coverage
+coverage/
+
+# Metro
+.metro-health-check*
+
+# ========== Template Folder Ignore Rules ==========
+
+# Node Modules
+template/node_modules/
+
+# Android
+template/android/.gradle/
+template/android/.idea/
+template/android/.cxx/
+template/android/.kotlin/
+template/android/local.properties
+template/android/*.iml
+template/android/*.hprof
+template/android/*.keystore
+!template/android/debug.keystore
+template/android/build/
+template/android/app/build/
+template/android/app/intermediates/
+template/android/app/.cxx/
+
+# iOS
+template/ios/build/
+template/ios/DerivedData/
+template/ios/Pods/
+template/ios/*.xcworkspace
+template/ios/*.xcodeproj/project.xcworkspace/
+template/ios/*.xcuserstate
+template/ios/*.pbxuser
+template/ios/*.mode1v3
+template/ios/*.mode2v3
+template/ios/*.perspectivev3
+template/ios/xcuserdata/
+template/ios/*.xccheckout
+template/ios/*.ipa
+template/ios/.xcode.env.local
+
+# Artifacts
+template/**/*.apk
+template/**/*.so
+
+# Fastlane
+template/**/fastlane/report.xml
+template/**/fastlane/Preview.html
+template/**/fastlane/screenshots
+template/**/fastlane/test_output
+
+# JS Bundles
+template/*.jsbundle
+
+# Ruby
+template/vendor/bundle/
+node_modules

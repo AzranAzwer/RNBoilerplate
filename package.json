@@ -1,0 +1,19 @@
+{
+  "name": "my-react-native-boilerplate",
+  "version": "1.0.13",
+  "description": "A custom React Native template with pre-installed packages",
+  "main": "template.config.js",
+  "keywords": [
+    "react-native",
+    "template",
+    "starter",
+    "boilerplate"
+  ],
+  "author": "Azran Azwer",
+  "files": [
+    "template",
+    "template.config.js",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT"
+}
