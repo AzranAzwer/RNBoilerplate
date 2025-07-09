@@ -11,7 +11,7 @@ First, you will need to install **React Native** by using this boilerplate.
 To install, run the following command from the project location:
 
 ```sh
-# OR using Yarn
+# using Yarn
 yarn install
 npx @react-native-community/cli init MyNewApp --version 0.78.2 --template my-react-native-boilerplate
 
@@ -26,7 +26,7 @@ First, you will need to install **Node Module** and **Pod**.
 To install Node, run the following command from the root of your React Native project:
 
 ```sh
-# OR using Yarn
+# using Yarn
 yarn install
 
 # OR using npm
@@ -40,11 +40,12 @@ Now, you will need to run **Metro**, the JavaScript build tool for React Native.
 To start the Metro dev server, run the following command from the root of your React Native project:
 
 ```sh
-# Using npm
+# using Yarn
+yarn start
+
+# OR Using npm
 npm start
 
-# OR using Yarn
-yarn start
 ```
 
 ## Step 2: Build and run your app
