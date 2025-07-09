@@ -15,7 +15,7 @@ const HomeScreen = () => {
   const navigation: T_HomeNavigationType = useNavigation();
   return (
     <View style={Styles.container}>
-      <Text>Welcome to RN boilerplate !</Text>
+      <Text>Welcome to RN boilerplate</Text>
 
       <View>
         <TouchableOpacity
