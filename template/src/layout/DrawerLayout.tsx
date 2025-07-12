@@ -5,6 +5,10 @@ import HomeNavigator from '../modules/home/routes/HomeNavigator';
 import PostNavigator from '../modules/post/routes/PostNavigator';
 
 const Drawer = createDrawerNavigator<DrawerLayoutList>();
+/**
+ * DrawerLayout component that defines the drawer navigation structure.
+ * It includes Home and Post navigators.
+ */
 const DrawerLayout = () => {
   return (
     <Drawer.Navigator

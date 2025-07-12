@@ -6,6 +6,10 @@ import SecondScreen from '../screens/SecondScreen';
 
 const HomeStack = createStackNavigator<HomeRouteList>();
 
+/**
+ * HomeNavigator component that defines the stack navigation structure for the home module.
+ * It includes HomeScreen and SecondScreen with initial route set to HomeScreen.
+ */
 const HomeNavigator = () => {
   const initialRoute: keyof HomeRouteList = 'HomeScreen';
   return (

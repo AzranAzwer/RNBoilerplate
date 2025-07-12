@@ -4,7 +4,7 @@ import Config from 'react-native-config';
 const setBaseUrl = (config: AxiosRequestConfig) => {
   config.baseURL = Config.RN_URL_API_PORTAL;
 };
-
+// This function sets the base URL for Axios requests based on the environment variable
 const SetupAxios = (axios: AxiosStatic) => {
   axios.interceptors.request.use(
     async config => {

@@ -4,7 +4,10 @@ import {PostRouteList} from './PostRouteTypes';
 import PostScreen from '../screens/PostListScreen';
 
 const PostStack = createStackNavigator<PostRouteList>();
-
+/**
+ * PostNavigator component that defines the stack navigation structure for the post module.
+ * It includes PostScreen with initial route set to PostScreen.
+ */
 const PostNavigator = () => {
   const initialRoute: keyof PostRouteList = 'PostScreen';
   return (

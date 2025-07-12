@@ -8,12 +8,12 @@
 import React, {useEffect} from 'react';
 import {Text, View} from 'react-native';
 import {useAppDispatch, useAppSelector} from '../../../hooks/useAppHook';
-import {getPostList} from '../redux/action/PostActions';
 import {
   GetPostContent,
   GetPostLoadingContent,
 } from '../redux/selectors/PostSelector';
 import {Styles} from './PostListScreen.styles';
+import {PostSearchExecute} from '../redux/action/PostActions';
 
 const PostScreen = () => {
   const dispatch = useAppDispatch();
@@ -21,7 +21,7 @@ const PostScreen = () => {
   const postLoadingContent = useAppSelector(GetPostLoadingContent());
 
   useEffect(() => {
-    dispatch(getPostList() as any);
+    dispatch(PostSearchExecute());
   }, [dispatch]);
 
   return (

@@ -1,14 +1,7 @@
-import {put, takeLatest} from 'redux-saga/effects';
-import {T_PostActionTypes} from '../action/PostActionTypes';
+import {takeLatest} from 'redux-saga/effects';
+import {PostSearchExecute} from '../action/PostActions';
 import {PostRepositoryExecute} from './repositories/PostRepository';
 
-export function* PostSearchExecuteEffect() {
-  try {
-    yield takeLatest(
-      T_PostActionTypes.POST_SEARCH_EXECUTE,
-      PostRepositoryExecute,
-    );
-  } catch (e) {
-    yield put({type: T_PostActionTypes.POST_SEARCH_FAILED});
-  }
+export function* PostSearchExecuteEffect(): Generator {
+  yield takeLatest(PostSearchExecute.type, PostRepositoryExecute);
 }

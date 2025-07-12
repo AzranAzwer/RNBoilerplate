@@ -1,8 +1,6 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
+ * The main entry point of the React Native application.
+ * Sets up Redux, navigation, status bar, and global Axios configuration.
  */
 
 import React from 'react';
@@ -15,7 +13,9 @@ import store from './src/setups/redux/Store';
 import SetupAxios from './src/setups/axios/SetupAxios';
 import AppLayout from './src/layout/AppLayout';
 
+// Configure Axios with global settings
 SetupAxios(axios);
+
 const App = () => {
   return (
     <Provider store={store}>

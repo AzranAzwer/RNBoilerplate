@@ -7,6 +7,10 @@ import {View} from 'react-native';
 import {Icon} from '@rneui/base';
 
 const Tab = createBottomTabNavigator<BottomTabLayoutList>();
+/**
+ * BottomTabLayout component that defines the bottom tab navigation structure.
+ * It includes Home and Post navigators with custom icons.
+ */
 const BottomTabLayout = () => {
   const renderTabIcon = (routeName: string, focused: boolean) => {
     const color = focused ? 'blue' : 'grey';
